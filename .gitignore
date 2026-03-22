@@ -1,10 +1,2 @@
-# 忽略 VS Code 的个人配置
 .vscode/
-
-# 忽略 Windows 系统生成的缩略图（安服截图多，容易产生这个）
-Thumbs.db
-
-# 如果你有不想公开的草稿
 private/
-笔记.md
-笔记.pdf
