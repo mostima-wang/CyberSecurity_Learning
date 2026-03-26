@@ -63,3 +63,31 @@ Windows 注册表是一个中央分层数据库，用于存储为一个或多个
 
 # AD(active directory)基础
 简而言之，Windows domain是指由特定企业管理的一组用户和计算机。域背后的主要思想是将 Windows 计算机网络中常用组件的管理集中到一个称为 Active Directory 的存储库中。
+
+要在 Active Directory 中配置用户、组或计算机，我们需要登录到域控制器，然后从开始菜单运行“Active Directory 用户和计算机”
+### Security Groups安全组 vs Organizational Units组织单位
+
+- 组织单位（OUs） 对于向用户和计算机应用策略（Policies）非常方便。这些策略包含了针对企业中不同角色的用户群体所进行的特定配置。请记住，一个用户在同一时间内只能属于一个 OU，因为如果试图向同一个用户应用两套不同的策略，逻辑上是行不通的。
+
+- 相比之下，安全组（Security Groups） 则用于授予对资源的权限。例如，如果你想允许某些用户访问共享文件夹或网络打印机，你就会使用“组”。一个用户可以同时属于多个组，这对于授予多种不同资源的访问权限是必不可少的。
+
+对比图：
+![](../images/2026-03-26-16-30-35.png)
+
+通过`delegate control`可以委托给一个组织单位或某个成员某项权限。
+## GPO
+Windows通过组策略对象（Group Policy Objects，简称GPO）来管理这些策略。简单来说，GPO就是一组可以应用到组织单位（OU）上的设置集合。GPO既可以包含针对用户的策略，也可以包含针对计算机的策略，这让你能够为特定的机器和身份建立一套标准配置基线。
+
+若要配置GPO，可以使用“组策略管理”(Group Policy Management)工具，该工具可以从“开始”菜单中找到。
+
+如果我们创建并链接了 GPO，但由于某种原因它们仍然不起作用，可以运行命令`gpupdate /force`来强制更新 GPO
+
+## 身份验证
+使用 Windows 域时，所有凭据都存储在域控制器中。每当用户尝试使用域凭据对服务进行身份验证时，该服务都需要向域控制器请求验证凭据是否正确。Windows 域中可以使用两种协议进行网络身份验证：
+
+- Kerberos：适用于所有最新版本的 Windows 系统。这是所有现代域中的默认协议。
+- NetNTLM：为了兼容性而保留的传统身份验证协议。
+### Kerberos验证流程：
+1. 客户端向AS(Authentication Service)申请TGT (Ticket Granting Ticket)票据许可票据
+2. 客户端拿着上面的TGT，向TGS(Ticket Granting Service，票据授予服务)申请ST(Service Ticket)服务票据。
+3. 客户端拿着ST向服务器申请，服务器验证ST后开放服务。
