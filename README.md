@@ -16,7 +16,7 @@
 * **[01-Linux基础](./thm实战学习/01-Linux基础.md)**：包含Linux基础知识及基础命令。
 * **[02-Windows&AD基础](./thm实战学习/01-Windows基础.md)**：包含Windows与active directory的基础知识及基础命令。
 * **[03-命令行](./thm实战学习/03-命令行.md)**：包含Windows CMD、PowerShell、Linux Shell的基础命令。
-* **[03-网络](./thm实战学习/03-网络.md)**：包含网络的基本知识，例如OSI，TCP/IP，各种协议等等。
+* **[04-网络](./thm实战学习/03-网络.md)**：包含网络的基本知识，例如OSI，TCP/IP，各种协议等等。
 *更新中！*
 
 ---
