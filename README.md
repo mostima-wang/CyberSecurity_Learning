@@ -18,14 +18,15 @@
 * **[03-命令行](./thm实战学习/03-命令行.md)**：包含Windows CMD、PowerShell、Linux Shell的基础命令。
 * **[04-网络](./thm实战学习/04-网络.md)**：包含网络的基本知识，例如OSI，TCP/IP，各种协议等等。
 * **[05-密码学基础](./thm实战学习/05-密码学基础.md)**：包含古典密码、公钥密码、数字证书等等。
-* **[06-漏洞利用基础](./thm实战学习/06-漏洞利用基础)**：包含多个漏洞的相关知识、利用方法、metasploit的入门以及基础使用等。
+* **[06-漏洞利用基础](./thm实战学习/06-漏洞利用基础)**：包含多个漏洞的相关知识、利用方法、metasploit的基础使用，以及一次简单的全流程渗透wp。
+
 *更新中！*
 
 ---
 
 ## 🛠️ 技术栈与工具箱
 * **信息收集**：FOFA, OneForAll, Dirsearch, Nmap
-* **漏洞利用**：Sqlmap, Burp Suite, DNSLog
+* **漏洞利用**：Metaspolit, Sqlmap, Burp Suite, DNSLog
 * **环境搭建**：PHP < 5.3.4 (用于00截断测试), DVWA, sqli-labs
 
 ---
