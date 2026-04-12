@@ -1,3 +1,16 @@
+- [Linux基础知识](#linux基础知识)
+  - [Linux背景知识](#linux背景知识)
+  - [文件系统相关命令](#文件系统相关命令)
+  - [Shell运算符](#shell运算符)
+  - [权限入门](#权限入门)
+    - [常用目录](#常用目录)
+  - [python3提供的httpserver](#python3提供的httpserver)
+  - [进程入门](#进程入门)
+    - [crontab](#crontab)
+  - [软件包与软件仓库](#软件包与软件仓库)
+    - [apt vs dpkg](#apt-vs-dpkg)
+    - [update与upgrade两兄弟的分工](#update与upgrade两兄弟的分工)
+
 # Linux基础知识
 
 ssh username@ip可以ssh（secure shell）远程登陆到ip主机
@@ -135,7 +148,7 @@ tryhackme@mymachine:~# wget http://10.67.160.196:8000/myfile
 
 "apt" 仓库就像是 Linux 界的“应用商店服务器”。我们只需要输入 `sudo apt install <文件名>`，系统就会自动从这些仓库里帮你抓取并安装。
 
-### apt vs dpkg：
+### apt vs dpkg
 dpkg 就像手动安装一个 .exe 文件，它不管依赖项；而 apt 就像应用商店，它会自动帮你把运行该软件所需的其他小插件一并装好，并且能自动升级。
 
 ### update与upgrade两兄弟的分工

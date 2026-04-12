@@ -1,3 +1,17 @@
+- [Windows基础知识](#windows基础知识)
+  - [NTFS文件系统](#ntfs文件系统)
+  - [windows文件夹](#windows文件夹)
+  - [用户](#用户)
+    - [用户帐户控制](#用户帐户控制)
+  - [系统配置和高级系统设置](#系统配置和高级系统设置)
+  - [命令提示符cmd-基础命令](#命令提示符cmd-基础命令)
+    - [注册表编辑器](#注册表编辑器)
+- [AD(active directory)基础](#adactive-directory基础)
+    - [Security Groups安全组 vs Organizational Units组织单位](#security-groups安全组-vs-organizational-units组织单位)
+  - [GPO](#gpo)
+  - [身份验证](#身份验证)
+    - [Kerberos验证流程：](#kerberos验证流程)
+
 # Windows基础知识
 
 ## NTFS文件系统

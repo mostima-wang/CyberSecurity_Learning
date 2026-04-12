@@ -1,4 +1,10 @@
-# 漏洞利用基础
+- [Moniker Link (CVE-2024-21413)](#moniker-link-cve-2024-21413)
+    - [概述](#概述)
+    - [漏洞原理](#漏洞原理)
+    - [技术细节拆解：](#技术细节拆解)
+    - [PoC](#poc)
+    - [YARA RULE](#yara-rule)
+
 # Moniker Link (CVE-2024-21413)
 https://msrc.microsoft.com/update-guide/en-US/vulnerability/CVE-2024-21413
 
