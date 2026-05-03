@@ -38,10 +38,23 @@
 * **[CVE-2026-7418 安全通告](./漏洞安全通告/CVE-2026-7418%20安全通告.pdf)**：包含 UTT HiPER 1250GW NTP strcpy 缓冲区溢出漏洞的概述、影响范围及修复建议。
 ---
 
-## 🛠️ 技术栈与工具箱
-* **信息收集**：FOFA, OneForAll, Dirsearch, Nmap
-* **漏洞利用**：Metaspolit, Sqlmap, Burp Suite, DNSLog
-* **环境搭建**：PHP < 5.3.4 (用于00截断测试), DVWA, sqli-labs
+
+## 🛠️ 技术栈与工具箱 (Technical Stack)
+
+### **🔍 威胁情报与信息搜集**
+*   **空间测绘**：FOFA, Shodan
+*   **情报分析**：**ThreatBook (微步)**, **VirusTotal**, **AlienVault OTX**
+*   **综合侦察**：OneForAll, Subfinder, Google Hacking
+
+### **🛡️ 研判与防御**
+*   **分析框架**：**MITRE ATT&CK**, **Cyber Kill Chain**
+*   **监控分析**：**Wireshark**, **CyberChef**
+*   **流程管理**：**SOC 告警分选 (Triage)**, 漏洞闭环管理, 安全通告编写
+
+### **⚔️ 攻防实战与自动化**
+*   **Web 安全**：Burp Suite, Sqlmap, Nmap
+*   **脚本开发**：**Python** 
+*   **辅助工具**：Metasploit, DNSLog
 
 ---
 
